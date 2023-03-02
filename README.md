@@ -1,4 +1,4 @@
-cd backend
+cd laravel
 
 php artisan migrate
 
