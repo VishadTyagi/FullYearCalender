@@ -13,7 +13,7 @@ function App() {
   }, []);
 
   const fetchMonthsAndDays = async () => {
-    await axios.get(`http://localhost:8000/api/month-day-list`).then(({ data }) => {
+    await axios.get(`http://localhost:3001/api/v1/calendar/month-day-list`).then(({ data }) => {
       setMonths(data.months);
       setDays(data.days);
     });

@@ -96,10 +96,7 @@ table tbody tr td.columns {
 }
 
 td:has(>.current-date) {
-    /* border-radius: 50%; */
-    padding: 8px 12px;
     background-color: aqua;
-    color: black;
 }
 
 .current-month {

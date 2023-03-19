@@ -40,7 +40,7 @@ const DateBlock = ({ year, month, date, changeDate, dateValue, getScheduleListBy
 
   const getScheduleList = async () => {
     await axios
-      .get(`http://localhost:8000/api/schedule/` + selected_date + date)
+      .get(`http://localhost:3001/api/v1/schedule/` + selected_date + date)
       .then(({ data }) => {
         setScheduleList(data);
       });
@@ -48,7 +48,7 @@ const DateBlock = ({ year, month, date, changeDate, dateValue, getScheduleListBy
 
   const saveSchedule = async () => {
     await axios
-      .post(`http://localhost:8000/api/schedule`, {
+      .post(`http://localhost:3001/api/v1/schedule`, {
         task: schedule,
         date: selected_date + date,
       })

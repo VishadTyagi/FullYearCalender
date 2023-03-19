@@ -21,7 +21,7 @@ const DateGrid = ({ year, month, date, changeDate }) => {
   const getScheduleListByMonth = async () => {
     await axios
       .get(
-        `http://localhost:8000/api/schedule/` +
+        `http://localhost:3001/api/v1/schedule/` +
           year +
           "-" +
           (month.toString().length > 1 ? month + 1 : "0" + (month + 1))
