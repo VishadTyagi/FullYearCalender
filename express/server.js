@@ -4,6 +4,8 @@ import bodyParser from 'body-parser';
 import calendarRoutes from './routes/calendar.js';
 import scheduleRoutes from './routes/schedule.js';
 import mongoose from 'mongoose';
+import dotenv from 'dotenv'
+dotenv.config();
 
 const app = express();
 const port = 3001;
@@ -14,7 +16,7 @@ app.use(bodyParser.json());
 app.use("/api/v1/calendar/", calendarRoutes);
 app.use("/api/v1/schedule/", scheduleRoutes);
 
-mongoose.connect('mongodb+srv://vishadtyagi:KJ3GPuyMKOcpQsAn@cluster0.kmrqu5c.mongodb.net/calendar').then((res) => {
+mongoose.connect(process.env.MONGO_URI).then((res) => {
         console.log(
             `Database Connected to ${res.connection.db.databaseName} on ${res.connection.host}`
         );
