@@ -1,6 +1,6 @@
 {
     "name": "@vishadtyagi/full-year-calendar",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "description": "A full-year calendar React component with month and date navigation.",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
@@ -12,7 +12,7 @@
     "type": "module",
     "repository": {
         "type": "git",
-        "url": "https://github.com/shubhamtyagi2606/FullYearCalendar"
+        "url": "https://github.com/VishadTyagi/FullYearCalendar"
     },
     "keywords": [
         "react",
@@ -46,6 +46,7 @@
         "typescript": "^4.9.5"
     },
     "scripts": {
+        "start": "react-scrips start",
         "build": "rollup -c",
         "prepublishOnly": "npm run build"
     }

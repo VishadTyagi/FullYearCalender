@@ -4,7 +4,7 @@ FullYearCalendar is a React component that displays a full-year calendar with th
 
 ## 🚀 Demo
 
-[Live Demo](https://d2dewcd6bifoh8.cloudfront.net)
+Check out the [Live Demo](https://d2dewcd6bifoh8.cloudfront.net) to see FullYearCalendar in action.
 
 ## 📦 Installation
 
@@ -13,11 +13,9 @@ You can install FullYearCalendar as an NPM package:
 ```sh
 npm install @vishadtyagi/full-year-calendar
 ```
-````
 
 ## 🚀 Usage
-
-Import the `FullYearCalendar` component and use it in your React app:
+Import the FullYearCalendar component and use it in your React app:
 
 ```tsx
 import "@vishadtyagi/full-year-calendar/dist/index.cjs.css";
